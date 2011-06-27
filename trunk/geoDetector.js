@@ -8,7 +8,7 @@
 
 if(Array.prototype.contains == undefined){
 	Array.prototype.contains = function(obj){
-		for(var i in this){
+		for(var i = 0 ; i < this.length ; i ++ ){
 			if(this[i] == obj || this[i] === obj){
 				return true ;
 			}
